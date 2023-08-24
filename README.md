@@ -1,6 +1,6 @@
 # Reactx-Adm
 
-![rectx-home-img](https://github.com/joaoaugusto543/Reactx-Adm/assets/119535029/4c0e8d36-9af4-49fc-abf4-8adb96ae0648)
+![rectx-home-img](https://github.com/joaoaugusto543/Reactx-Adm/assets/119535029/0757ca2c-2c15-4c5f-9847-0044ec66952f)
 
 É a parte administrativa do Reactx, onde pode administrar as contas.
 
