@@ -1,0 +1,88 @@
+.userAdmProfile{
+    position: relative;
+    width: 100%;
+    padding: 2em 5em;
+}
+
+.userAdmProfile h1{
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.userAdmPage p{
+    font-size: 25px;
+    padding: 0.5em 0;
+}
+
+.userAdmPage span{
+    font-weight: bold;
+}
+
+.userAdmPage{
+    width: 65%;
+    position: relative;
+}
+
+
+@media (max-width:919px){
+    .userAdmPage{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:606px){
+    .userAdmPage p{
+        font-size: 20px;
+    }
+
+    .userAdmPage span{
+        font-size: 20px;
+    }
+
+    .userAdmProfile h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:512px){
+    .userAdmProfile {
+        padding: 2em 3em;
+    }
+}
+
+@media (max-width:488px){
+    .userAdmProfile {
+        padding: 2em 1.5em;
+    }
+}
+
+@media (max-width:404px){
+    .userAdmPage p{
+        font-size: 16px;
+    }
+
+    .userAdmPage span{
+        font-size: 16px;
+    }
+
+    .userAdmProfile h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:334px){
+    .userAdmPage p{
+        font-size: 14px;
+    }
+
+    .userAdmPage span{
+        font-size: 14px;
+    }
+
+    .userAdmProfile {
+        padding: 2em 1em;
+    }
+
+}

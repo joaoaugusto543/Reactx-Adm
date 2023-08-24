@@ -1,0 +1,123 @@
+.usersBannedPage{
+    position: relative;
+    width: 65%;
+    overflow-y: scroll;
+}
+
+.usersBanned{
+    width: 100%;
+    padding: 2em;
+    padding-top: 1em;
+    list-style-type: none;
+}
+
+.usersBanned li{
+    border-bottom: 2px solid #000;
+    padding: 1.5em;
+}
+
+.usersBanned span{
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.usersBanned svg{
+    margin-right: 0.5em;
+}
+
+.usersBannedPage h1{
+    text-align: center;
+    padding-top: 1em;
+}
+
+.userBanned{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usersBanned svg{
+    font-size: 30px;
+}
+
+.userBanned div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userBanned button,.userBanned a{
+    height: 30px;
+    width: 80px;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.userBanned a,#authorize{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userBanned a:hover,.userBanned button:hover{
+    background-color: #66baff;
+}
+
+.userBanned button{
+    margin-left: 0.5em;
+}
+
+@media (max-width:919px){
+    .usersBannedPage{
+        width: 100%;
+    }
+}
+
+@media (max-width:597px){
+    .usersBanned span{
+        font-size: 20px;
+    }
+
+    .userBanned button,.userBanned a{
+        height: 26px;
+        font-size: 13px;
+    }
+
+    .usersBanned li{
+        padding: 1em;
+    }
+}
+
+@media (max-width:499px){
+    .usersBannedPage{
+        font-size: 16px;
+        padding-top: 2em;
+    }
+
+    .usersBanned{
+        padding: 1em;
+    }
+}
+
+@media (max-width:407px){
+    .userBanned{
+        flex-direction: column;
+    }
+
+    .userBanned span{
+        font-size: 20px;
+        padding-bottom:1em ;
+    }
+
+    .usersBannedPage h1{
+        font-size: 25px;
+    }
+}

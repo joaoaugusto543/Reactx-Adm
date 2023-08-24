@@ -1,0 +1,88 @@
+.userBannedProfile{
+    position: relative;
+    width: 100%;
+    padding: 2em 5em;
+}
+
+.userBannedProfile h1{
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.userBannedPage p{
+    font-size: 25px;
+    padding: 0.5em 0;
+}
+
+.userBannedPage span{
+    font-weight: bold;
+}
+
+.userBannedPage{
+    width: 65%;
+    position: relative;
+}
+
+
+@media (max-width:919px){
+    .userBannedPage{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:606px){
+    .userBannedPage p{
+        font-size: 20px;
+    }
+
+    .userBannedPage span{
+        font-size: 20px;
+    }
+
+    .userBannedProfile h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:512px){
+    .userBannedProfile {
+        padding: 2em 3em;
+    }
+}
+
+@media (max-width:488px){
+    .userBannedProfile {
+        padding: 2em 1.5em;
+    }
+}
+
+@media (max-width:404px){
+    .userBannedPage p{
+        font-size: 16px;
+    }
+
+    .userBannedPage span{
+        font-size: 16px;
+    }
+
+    .userBannedProfile h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:334px){
+    .userBannedPage p{
+        font-size: 14px;
+    }
+
+    .userBannedPage span{
+        font-size: 14px;
+    }
+
+    .userBannedProfile {
+        padding: 2em 1em;
+    }
+
+}

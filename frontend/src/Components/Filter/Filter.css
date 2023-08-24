@@ -1,0 +1,145 @@
+.filter{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    height: 100vh;
+    width: 50%;
+    box-shadow:#222 4px -7px 9px 8px;
+    transform: translateX(110%);
+    transition: 0.8s;
+    padding: 3em 2em;
+}
+
+.filter h1 {
+    text-align: center;
+}
+
+.filter form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filter label{
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+    width: 100%;
+}
+
+.filter input[type='text'],.filter input[type='date'],.filter select{
+    height: 35px;
+}
+
+.filter input[type='text'],.filter input[type='date']{
+    padding: 0.5em;
+    outline: none;
+}
+
+.filter span{
+    padding: 0.5em;
+    padding-left: 0;
+    font-weight: bold;
+}
+
+.buttonFilter{
+    position: fixed;
+    top: 0;
+    right: 10px;
+    z-index: 34;
+    font-size: 40px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0.2em;
+}
+
+.buttonCloseFilter{
+    display: none;
+    animation: rotate 0.3s linear normal;
+}
+
+.buttonFormFilter{
+    height: 45px;
+    width: 150px;
+    margin:1.5em 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(2, 214, 230, 0.959);
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.buttonFormFilter:hover{
+    background-color: rgb(47, 238, 252);
+}
+
+.buttonsFilter > input{
+    margin-left: 0.5em;
+}
+
+@keyframes rotate{
+
+    from{
+        color: transparent;
+    }
+
+    to{
+        color: #000;
+        transform: rotate(720deg);
+    }
+
+}
+
+@media (max-width:919px){
+    .filter{
+        width: 60%;
+    }
+}
+
+@media (max-height:902px){
+    .filter{
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width:629px){
+    .filter{
+        width: 90%;
+    }
+}
+
+@media (max-width:900px){
+    .buttonFormFilter {
+        width: 120px;
+        height: 35px;
+    }
+
+    .filter input[type='text'], .filter input[type='date'], .filter select {
+        height: 30px;
+        font-size: 11px;
+    }
+    .filter span{
+        font-size: 14px;
+    }
+
+    .filter h1{
+        font-size: 25px;
+    }
+
+    .buttonCloseFilter{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:357px){
+    .buttonFormFilter {
+        width: 87px;
+        height: 30px;
+        font-size: 12px;
+    }
+}

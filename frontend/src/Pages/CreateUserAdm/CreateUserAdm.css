@@ -1,0 +1,151 @@
+.createUser{
+    position: relative;
+    width: 65%;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.title{
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.title svg{
+    margin-right: 0.2em;
+    font-size: 40px;
+}
+
+.formCreate{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formCreate label{
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.formCreate label > span{
+    font-weight: bold;
+    padding: 0.5em 0;
+    font-size: 20px;
+}
+
+.formCreate input,.formCreate select{
+    height: 40px;
+    padding: 0.5em;
+    outline: none;
+}
+
+.buttonCreate{
+    height: 45px;
+    width: 150px;
+    margin:1.5em 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(2, 214, 230, 0.959);
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.buttonCreate:hover{
+    background-color: rgb(47, 238, 252);
+}
+
+.errorProfile{
+    color: red;
+    font-weight: bold;
+    padding-top: 0.5em;
+    margin-bottom: -17px;
+}
+
+.sucessMessage{
+    width: 100%;
+    color: green;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.password svg,.confirmPassword svg{
+    position: absolute;
+    top: 44px;
+    right: -6px;
+    font-size: 58px;
+    cursor: pointer;
+    padding: 0.3em;
+}
+
+@media (max-width:919px){
+    .createUser{
+        width: 100%;
+    }
+}
+
+@media (max-width:551px){
+    .title{
+        font-size: 25px;
+    }
+    .title svg{
+        font-size: 30px;
+    }
+
+    .formCreate label > span{
+        font-size: 16px;
+    }
+
+    .password svg,.confirmPassword svg{
+        top: 34px;
+        right: -1px;
+        font-size: 53px;
+    }
+
+    .formCreate input,.formCreate select{
+        height: 35px;
+    }
+}
+
+@media (max-width:413px){
+    .title{
+        font-size: 20px;
+    }
+    .title svg{
+        font-size: 25px;
+    }
+
+    .formCreate label > span{
+        font-size: 14px;
+    }
+
+    .password svg,.confirmPassword svg{
+        top: 30px;
+        right: 1px;
+        font-size: 49px;
+    }
+
+    .formCreate input,.formCreate select{
+        height: 30px;
+    }
+}
+
+@media (max-width:323px){
+    .title{
+        padding-top: 2em;
+    }
+
+    .password svg,.confirmPassword svg{
+        top: 31px;
+        font-size: 46px;
+    }
+}

@@ -1,0 +1,136 @@
+.homePage{
+    position: relative;
+    width: 65%;
+}
+
+.charts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2em;
+    position: absolute;
+    top: 294px;
+    left: 0;
+    z-index: 3;
+}
+
+.amountOfUsers{
+    color: #fff;
+    z-index: 3;
+    font-size: 44px;
+}
+
+.bannerHome{
+    background:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bannerHome img{
+    width: 100%;
+    height: 100%;
+}
+
+.bannerHome::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.welcome{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom:1em ;
+}
+
+.textHome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 3em;
+}
+
+rect{
+    fill:transparent ;
+}
+
+text{
+    fill: #fff;
+    font-weight: bold;
+}
+
+.google-visualization-tooltip path{
+    fill: #222;
+    border: none;
+}
+
+@media (max-width:1573px){
+    .charts{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:919px){
+    .homePage{
+        width: 100%;
+        min-height: 100vh;
+    }
+
+}
+
+@media (max-width:500px){
+    .charts{
+        display: none;
+    }
+
+    .textHome{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .welcome{
+        font-size: 30px;
+    }
+
+    .amountOfUsers,.logout{
+        font-size: 34px;
+    }
+
+    .logout{
+        padding:0 2em;
+    }
+
+   
+}
+
+@media (max-width:368px){
+   
+}
+
+@media (max-height:900px){
+    .charts{
+        display: none;
+    }
+}
+

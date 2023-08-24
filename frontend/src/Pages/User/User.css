@@ -1,0 +1,88 @@
+.userProfile{
+    position: relative;
+    width: 100%;
+    padding: 2em 5em;
+}
+
+.userProfile h1{
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.userPage p{
+    font-size: 25px;
+    padding: 0.5em 0;
+}
+
+.userPage span{
+    font-weight: bold;
+}
+
+.userPage{
+    width: 65%;
+    position: relative;
+}
+
+
+@media (max-width:919px){
+    .userPage{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:606px){
+    .userPage p{
+        font-size: 20px;
+    }
+
+    .userPage span{
+        font-size: 20px;
+    }
+
+    .userProfile h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:512px){
+    .userProfile {
+        padding: 2em 3em;
+    }
+}
+
+@media (max-width:488px){
+    .userProfile {
+        padding: 2em 1.5em;
+    }
+}
+
+@media (max-width:404px){
+    .userPage p{
+        font-size: 16px;
+    }
+
+    .userPage span{
+        font-size: 16px;
+    }
+
+    .userProfile h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:334px){
+    .userPage p{
+        font-size: 14px;
+    }
+
+    .userPage span{
+        font-size: 14px;
+    }
+
+    .userProfile {
+        padding: 2em 1em;
+    }
+
+}

@@ -1,0 +1,1 @@
+Não interrompa o teste quando for executado, se caso interromper, acesse o seu banco de dados de teste e limpe as tabelas.
