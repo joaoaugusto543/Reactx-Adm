@@ -44,7 +44,7 @@ function App() {
         <Route path='/userWaiting/:id' element={auth ? <UserWaiting/> : <Navigate to='/login'/>}/>
         <Route path='/usersbanned' element={auth ? <UsersBanned/> : <Navigate to='/login'/>}/>
         <Route path='/userbanned/:id' element={auth ? <UserBanned/> : <Navigate to='/login'/>}/>
-        <Route path='/register' element={auth ? <CreateUserAdm/> : <Navigate to='/login'/>}/>
+        <Route path='/register' element={auth && auth.mainadmin ? <CreateUserAdm/> : <Navigate to='/login'/>}/>
         <Route path='/security' element={auth ? <Security/> : <Navigate to='/login'/>}/>
         <Route path='/credits' element={auth ? <Credits/> : <Navigate to='/login'/>}/>
         <Route path='/credit/:id' element={auth ? <Credit/> : <Navigate to='/login'/>}/>
